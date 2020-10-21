@@ -1,0 +1,41 @@
+.mainblack{
+    background-color: black;
+    height: 500px;
+    width: 1000px;
+    padding: 5px 5px 5px 5px;
+}
+.toporange{
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+}
+.redconter{
+    background-color: red;
+    height: 300px;
+    width: 25%;
+    float:left;
+}
+.greenconter{
+    background-color: green;
+    height: 300px;
+    width: 25%;
+    float:left;
+}
+.blueconter{
+    background-color: blue;
+    height: 300px;
+    width: 25%;
+    float:left;
+}
+.blackconter{
+    background-color: black;
+    height: 300px;
+    width: 25%;
+    float:left;
+}
+.bottomorange{
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+    float:left;
+}
