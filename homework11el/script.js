@@ -132,15 +132,74 @@
 //         divTable.appendChild(tr)
 //     }
 // }
-// - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки.
+// - Напишите «Карусель» – ленту изображений, которую можно листать влево-вправо нажатием на стрелочки. №1
+let imgArray=[
+{
+    id:1,
+    img_url:'images.jfif'
+},{
+    id:2,
+    img_url:'images (1).jfif'
+},{
+    id:3,
+    img_url:'images (2).jfif'
+},{
+    id:4,
+    img_url:'images (3).jfif'
+},{
+    id:5,
+    img_url:'images (4).jfif'
+},{
+    id:5,
+    img_url:'images (5).jfif'
+},{
+    id:5,
+    img_url:'images (6).jfif'
+},
+]
+let content=document.getElementById('content');
+let img=document.createElement('img');
+let btn1=document.createElement('button');
+let btn2=document.createElement('button');
+
+
+btn1.innerText='LEFT';
+btn2.innerText='RIGHT';
+
+let index=0;
+
+img.width=300;
+
+img.src=imgArray[index].img_url;
+content.appendChild(img);
+content.appendChild(btn1);
+content.appendChild(btn2);
+
+btn1.onclick=()=>{
+   if( index-1<0){
+    index=imgArray.length-1
+}else{
+    index=index-1
+
+}
+img.src=imgArray[index].img_url;
 
 
 
+}
+btn2.onclick=()=>{
+  if(  index+1>imgArray.length-1){
 
+      index=0
+  }else{
 
+      index=index+1
+  }
 
+    img.src=imgArray[index].img_url;
 
-
+}
+//__________________________________________________________________________________________________________________________________________
 
 
 //__________________________________________________________________________________________________________________________________________
@@ -174,17 +233,16 @@
 // let badWords=['бля','ска','пздц'];
 // let btn=document.getElementById('sentenceButton')
 
-
-// document.getElementById('sentence').oninput=()=>{
-// let chack=document.getElementById('sentence').value;
-// btn.onclick=()=>{
-//     let some=badWords.some(item=>item==chack)
-//         alert('!!!!!!!!!')
-    
-      
-//        }
-//         }
-// __________________________________________________________________________________________________________________________________________
+// btn.onclick = () => {
+//     let input = document.getElementById('sentence');
+//     if(badWords.some(item => item == input.value)){
+//         alert('!!!!!!!!!!');
+//     }else{
+//                 alert('zzz');
+//             }
+// } 
+//не  виходить   
+//________________________________________________________________________________________________________________________________
 
 // let usersWithAddress = [
 //     {id:1,name: 'vasya', age: 31, status: false, address: {city: 'Lviv', street: 'Shevchenko', number: 16}},

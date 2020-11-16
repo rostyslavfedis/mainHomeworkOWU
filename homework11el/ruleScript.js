@@ -25,8 +25,8 @@ divForMenu.appendChild(ul);
 divForMenu.setAttribute('id','menuDiv')
 content.appendChild(divForMenu)
 divForMenu.style.backgroundColor='black';
-a.style.textDecoration='none'
 
+//не знаю як дальше зробити
 
 
 
