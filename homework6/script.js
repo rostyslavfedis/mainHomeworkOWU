@@ -137,13 +137,13 @@
 //     }
 
 //  CLOCK 2хв
-// for(let x=0; x<=59; x++){
-//     console.log(x+'ceк');
-//    if(x==59){
-//     for(let x=0; x<=59; x++)
-//     console.log('1 хв:'+x+'сек');
-//    }
-//    }
+for(let x=0; x<=59; x++){
+    console.log(x+'ceк');
+   if(x==59){
+    for(let x=0; x<=59; x++){
+    console.log('1 хв:'+x+'сек');}  
+   }     
+   }
 //  CLOCK 2год 20хв
 
     //    for(let x=0; x<=2; x++){
@@ -172,11 +172,11 @@
     // }
     // console.log(str);
  //2
-    let word=['a','b','c'];
-    let str='';
-    let i=0;
-    while(i<word.length){
-        str+=word[i];
-        i++;
-           }
-console.log(str);
+//     let word=['a','b','c'];
+//     let str='';
+//     let i=0;
+//     while(i<word.length){
+//         str+=word[i];
+//         i++;
+//            }
+// console.log(str);

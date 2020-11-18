@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalStorage</title>
+    <style>
+        textarea {
+         width: 100px; /* Ширина поля в процентах */
+         height: 100px; /* Высота поля в пикселах */
+         resize: none; /* Запрещаем изменять размер */
+        } 
+       </style>
+
+</head>
+<body>
+    <div>task1</div>
+    <textarea name="areas" id="area" cols="30" rows="10"></textarea>
+    <button id='button'>SAVE</button>
+
+
+    <div>task2</div>
+<fieldset>
+    <legend>MyForm</legend>
+    <form id='form1' oninput="saveForm(this)">
+        <textarea name="area1" id="area" cols="30" rows="10"></textarea>
+        <input type="text" name="input1" id="input1">
+        <input type="number" name="input2" id="input2">
+        <input type="checkbox" name="check" id="check" value="false">
+        <input type="radio" name="radio" id="radio1" value="false">
+        <input type="radio" name="radio" id="radio2" value="false">
+        <select name="select" id="select">
+            <option>ITEM 1</option>
+            <option>ITEM 2</option>
+            <option>ITEM 3</option>
+            <option>ITEM 4</option>
+            <option>ITEM 5</option>
+            <option>ITEM 6</option>
+        </select>
+    </form>
+</fieldset>
+
+<div>task3</div>
+
+<div>
+    <button id="left"><</button>
+    <button id="right">></button>
+</div>
+<textarea name="myArea" id="myArea1" cols="30" rows="10"></textarea>
+<button id="saveTxt">сохранить</button>
+<div>task4</div>
+<!-- ФИО, номер, почта, фирма, отдел, день рождения -->
+<form id="forma">
+
+    <label>FIO:</label><br>
+    <input type="text" name="fio"><br>
+
+
+    <label>Number:</label><br>
+    <input type="tel" name="phone"><br>
+
+
+    <label>Mail:</label><br>
+    <input type="email" name="mail"><br>
+
+
+    <label>Firm:</label><br>
+    <input type="text" name="firm"><br>
+
+
+    <label>Departament:</label><br> 
+    <input type="text" name="departament"><br>
+
+
+    <label>Date of birth:</label><br>
+    <input type="date" name="birthday"><br>
+</form>
+<button id=saveUser>save</button>
+    <script src="script.js"></script>
+</body>
+</html>
