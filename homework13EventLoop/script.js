@@ -503,7 +503,7 @@ let result = await promise;
 async function sunc(){
     let res=await startMyRoutine();
     let res1=await listOfRoutine0(9);
-    let res2=await listOfRoutine1(0);
+    let res2=await listOfRoutine1(1);
     let res3=await listOfRoutine2(1);
     let res4=await listOfRoutine3(1);
     let res5=await listOfRoutine4(1);
